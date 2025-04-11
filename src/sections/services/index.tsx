@@ -9,14 +9,14 @@ export const ServiceSection = component$(() => {
                 <div class="grid gap-2 p-4 bg-[#1F1F1F] my-2" style="grid-template-columns: max-content 1fr max-content;">
                     <div class="grid gap-2" style="grid-template-columns: max-content max-content;">
                         <div>
-                            <img src="/images/icons/flower.png" />
+                            <img src="/images/icons/flower.png" loading="lazy" alt="icon" />
                         </div>
                         <p class="text-white">Recommended Products</p>
                     </div>
                     <div></div>
-                    <a class="grid gap-2 items-center cursor-pointer" style="grid-template-columns: max-content max-content;">
+                    <a class="grid gap-2 items-center cursor-pointer" style="grid-template-columns: max-content max-content;" href="/">
                         <p class="text-white">More</p>
-                        <img src="/images/icons/chevron.png" class="invert-100" />
+                        <img src="/images/icons/chevron.png" class="invert-100" loading="lazy" alt="icon" />
                     </a>
                 </div>
                 <div class="grid gap-4 grid-cols-[repeat(auto-fill,minmax(300px,1fr))]">
@@ -26,7 +26,7 @@ export const ServiceSection = component$(() => {
                                 <div class="border-r border-b border-l border-slate-200  bg-white rounded-[4px] flex flex-col justify-between leading-normal shadow-md">
                                     <div >
                                         <div class="overflow-hidden h-48 ">
-                                            <img class="w-full h-full object-center rounded-t-[4px] hover:scale-[1.05] transition-all duration-500 object-cover" src={item.thumbnail} alt={item.display} />
+                                            <img class="w-full h-full object-center rounded-t-[4px] hover:scale-[1.05] transition-all duration-500 object-cover" src={item.thumbnail} alt={item.display} loading="lazy" />
                                         </div>
                                         <p class="text-gray-700 text-base text-center p-2">{item.display}</p>
                                     </div>

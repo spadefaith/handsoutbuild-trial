@@ -29,7 +29,7 @@ export const Nav = component$(() => {
                     />
                     <NavItem
                         display="Who we are"
-                        href="/about"
+                        href="/"
                         items={[
                             { display: "Company culture", href: "/about" },
                             { display: "Our partnership", href: "/about" },
@@ -37,7 +37,7 @@ export const Nav = component$(() => {
                     />
                     <NavItem
                         display="What we do"
-                        href="/services"
+                        href="/"
                         items={[
                             { display: "Government Construction & Restoration", href: "/about" },
                             { display: "Repair Maintenance (Australia-Wide)", href: "/about" },
@@ -53,7 +53,7 @@ export const Nav = component$(() => {
                     />
                     <NavItem
                         display="Our Insight"
-                        href="/insight"
+                        href="/"
                         items={[
                             { display: "Company News", href: "/about" },
                             { display: "Industry articles", href: "/about" },
@@ -62,7 +62,7 @@ export const Nav = component$(() => {
                     />
                     <NavItem
                         display="Emergency Job"
-                        href="/book"
+                        href="/"
                     />
                 </div>
             </div>

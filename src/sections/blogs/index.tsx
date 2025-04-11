@@ -12,7 +12,7 @@ export const BlogSection = component$(() => {
                 <p class="text-[16px] text-left mb-2" data-aos="zoom-out-right" data-aos-duration="500">Keep up to date.</p>
                 <p class="text-[30px] text-left w-[80%] mb-5">Latest news and updated</p>
                 <div>
-                    <a class="bg-white hover:bg-white-700 text-black py-2 px-4 rounded transition duration-200" href="/blogs">View all</a>
+                    <a class="bg-white hover:bg-white-700 text-black py-2 px-4 rounded transition duration-200" href="/">View all</a>
                 </div>
             </div>
             <div class="grid grid-cols-1 gap-4 sm:grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(150px,1fr))]">
@@ -22,7 +22,7 @@ export const BlogSection = component$(() => {
                             <div class="border-r border-b border-l border-slate-200  bg-white rounded-[4px] flex flex-col justify-between leading-normal shadow-md">
                                 <div class="relative">
                                     <div class="overflow-hidden h-100 md:h-48 ">
-                                        <img class="w-full h-full object-center rounded-t-[4px] group-hover:scale-[1.05] transition-all duration-500 object-cover" src={item.image} alt={item.display} />
+                                        <img loading="lazy" class="w-full h-full object-center rounded-t-[4px] group-hover:scale-[1.05] transition-all duration-500 object-cover" src={item.image} alt={item.display} />
                                     </div>
                                     <div class="h-[100px] relative mb-5">
                                         <p class="text-gray-700 text-base text-center p-2 absolute top-1/2 -translate-y-1/2">{item.display}</p>

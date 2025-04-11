@@ -30,7 +30,7 @@ export const Accordion = component$(
                     <button class="ml-auto" type="button">
                         <img src="/images/icons/chevron.png" class={
                             (isOpen.value ? "rotate-90" : "rotate-[270deg]")
-                        } />
+                        } loading="lazy" />
                     </button>
                 </summary>
 

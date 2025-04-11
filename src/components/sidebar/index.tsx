@@ -64,7 +64,7 @@ export const Sidebar = component$(() => {
             />
             <SideItem
                 display="Who we are"
-                href="/about"
+                href="/"
                 items={[
                     { display: "Company culture", href: "/about" },
                     { display: "Our partnership", href: "/about" },
@@ -72,7 +72,7 @@ export const Sidebar = component$(() => {
             />
             <SideItem
                 display="What we do"
-                href="/services"
+                href="/"
                 items={[
                     { display: "Government Construction & Restoration", href: "/about" },
                     { display: "Repair Maintenance (Australia-Wide)", href: "/about" },
@@ -84,11 +84,11 @@ export const Sidebar = component$(() => {
             />
             <SideItem
                 display="Our Projects"
-                href="/projects"
+                href="/"
             />
             <SideItem
                 display="Our Insight"
-                href="/insight"
+                href="/"
                 items={[
                     { display: "Company News", href: "/about" },
                     { display: "Industry articles", href: "/about" },
@@ -97,7 +97,7 @@ export const Sidebar = component$(() => {
             />
             <SideItem
                 display="Emergency Job"
-                href="/book"
+                href="/"
             />
         </div>
         <div class={
