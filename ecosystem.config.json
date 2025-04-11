@@ -1,0 +1,9 @@
+{
+  "apps": [
+    {
+      "script": "server/entry.express.js",
+      "name": "handsoutbuild",
+      "exec_mode": "cluster"
+    }
+  ]
+}
