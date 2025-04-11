@@ -46,6 +46,9 @@ export default component$(() => {
         <RouterHead />
       </head>
       <body lang="en" aos-easing="ease" aos-duration="1000">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
         <RouterOutlet />
         {!isDev && <ServiceWorkerRegister />}
       </body>
