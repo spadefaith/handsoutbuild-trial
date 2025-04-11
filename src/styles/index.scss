@@ -1,0 +1,14 @@
+@import './utils/query.scss';
+
+.section-margin-x {
+    padding: 0px 10%;
+
+    @include media("<=tablet") {
+        padding: 0px 5%;
+    }
+
+    @include media("<=phone") {
+        padding: 0px 2%;
+    }
+
+}

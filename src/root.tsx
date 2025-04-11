@@ -1,4 +1,4 @@
-import { component$ } from "@builder.io/qwik";
+import { component$, createContextId, useContextProvider, useStore } from "@builder.io/qwik";
 import {
   QwikCityProvider,
   RouterOutlet,
@@ -8,6 +8,16 @@ import { RouterHead } from "./components/router-head/router-head";
 import { isDev } from "@builder.io/qwik";
 
 import "./global.css";
+import 'swiper/css/bundle';
+import "./styles/index.scss";
+
+
+export interface SidebarType {
+  isShow: boolean;
+}
+
+export const SidebarContext = createContextId<SidebarType>("docs.sidebar");
+
 
 export default component$(() => {
   /**
@@ -16,6 +26,12 @@ export default component$(() => {
    *
    * Don't remove the `<head>` and `<body>` elements.
    */
+
+  const sidebarState = useStore<SidebarType>({
+    isShow: false,
+  });
+
+  useContextProvider(SidebarContext, sidebarState);
 
   return (
     <QwikCityProvider>
@@ -29,7 +45,7 @@ export default component$(() => {
         )}
         <RouterHead />
       </head>
-      <body lang="en">
+      <body lang="en" aos-easing="ease" aos-duration="1000">
         <RouterOutlet />
         {!isDev && <ServiceWorkerRegister />}
       </body>
